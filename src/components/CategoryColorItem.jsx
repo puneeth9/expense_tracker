@@ -17,7 +17,7 @@ const CategoryColorItem = (props) => {
     const { index, category = {} } = props;
     const { name = '', color = '#000000' } = category;
     return (
-        <div key={index} style={styles.containerStyles}>
+        <div key={`${index}_categoryColor`} style={styles.containerStyles}>
             <div data-testid={props["colorTestId"] || ''} style={{...styles.colorStyles, backgroundColor: color }} />
             <p data-testid={props["nameTestId"] || ''}>{name}</p>
         </div>

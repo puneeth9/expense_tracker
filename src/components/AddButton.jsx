@@ -9,7 +9,7 @@ const AddButton = ({ addExpense = false, handleAddExpense = () => {}}) => {
     const displayText = addExpense ? t('reset') : t('add');
     const startIcon = addExpense ? <ResetIcon /> : <AddIcon />
     return (
-        <>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
             <Button
                 data-testid="addButton"
                 variant='contained'
@@ -18,7 +18,7 @@ const AddButton = ({ addExpense = false, handleAddExpense = () => {}}) => {
             >
                 {displayText}
             </Button>
-        </>
+        </div>
     )
 }
 

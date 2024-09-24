@@ -92,7 +92,7 @@ const ExpenseListItem = (props) => {
     }
 
     return (
-        <TableRow sx={styles.tableRowStyles} data-testid={`${index}_expense`} key={index}>
+        <TableRow sx={styles.tableRowStyles} data-testid={`${index}_expense`} key={`${index}_expenseItem`}>
             <TableCell align="center">
                 <TableElement value={`${index + 1}.`}/>
             </TableCell>
