@@ -11,7 +11,7 @@ const AddExpense = (props) => {
     } = props;
 
     if (!addExpense) return <></>;
-    return <TableBody>
+    return <TableBody data-testid="addNewExpense">
         <ExpenseListItem
             expenseDetails={{}}
             index={index}

@@ -14,6 +14,7 @@ const styles = {
 
 const getDataInSankeyFormat = ({ expenses, categoryDataMap }) => {
     const nodeIdToIndexMap = {};
+    // console.log()
     const nodes = Object.keys(categoryDataMap).map((key, index) => {
         const { name, color } = categoryDataMap[key];
         nodeIdToIndexMap[key] = index;

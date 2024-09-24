@@ -14,7 +14,7 @@ const TableElement = ({ isEditable = false, value, setValue, type, errorText = '
     if (isEditable) {
         const errorProps = {};
         if(errorText.length) {
-            errorProps.error = "error"
+            errorProps.error = true
             errorProps.helperText = errorText;
             errorProps.sx = styles.errorStyles;
         }

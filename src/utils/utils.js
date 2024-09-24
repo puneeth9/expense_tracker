@@ -16,6 +16,7 @@ const getRandomColor = () => {
 }
 
 const hexToRgb = (hex) => {
+    // Get rgb from hex
     hex = hex.replace(/^#/, '');
     let r = parseInt(hex.slice(0, 2), 16);
     let g = parseInt(hex.slice(2, 4), 16);
