@@ -6,7 +6,8 @@ const SNACKBAR_ACTIONS = {
 
 const ERROR_MESSAGES = {
     EMPTY: 'Field cannot be empty',
-    IN_AND_OUT_FLOW_ARE_SAME: 'Inflow and outflow should be different'
+    IN_AND_OUT_FLOW_ARE_SAME: 'Inflow and outflow should be different',
+    AMOUNT_NEGATIVE: 'Amount should be greater than 0'
 };
 
 export {

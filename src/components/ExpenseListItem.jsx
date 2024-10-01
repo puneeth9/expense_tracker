@@ -61,6 +61,10 @@ const ExpenseListItem = (props) => {
             setAmountFlowingError(ERROR_MESSAGES.EMPTY)
             hasErrors = hasErrors || true;
         }
+        if(amountFlowing <= 0) {
+            setAmountFlowingError(ERROR_MESSAGES.AMOUNT_NEGATIVE)
+            hasErrors = hasErrors || true;
+        }
         if (getCategoryId(inflowType) === getCategoryId(outflowType)) {
             setInflowTypeError(ERROR_MESSAGES.IN_AND_OUT_FLOW_ARE_SAME);
             setOutflowTypeError(ERROR_MESSAGES.IN_AND_OUT_FLOW_ARE_SAME);
